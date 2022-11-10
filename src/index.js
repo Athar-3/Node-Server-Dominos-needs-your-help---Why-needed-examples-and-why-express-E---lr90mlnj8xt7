@@ -16,7 +16,11 @@ function handleServer(req, res) {
   if (url === "/contact") {
     res.setHeader("Content-Type", "application/json");
     res.writeHead(200);
-    res.end(`{phone: '18602100000',email: 'guestcaredominos@jublfood.com'}`);
+    res.end(`{
+        phone: '18602100000',
+        email: 'guestcaredominos@jublfood.com'
+      }
+      `);
   }
 }
 
