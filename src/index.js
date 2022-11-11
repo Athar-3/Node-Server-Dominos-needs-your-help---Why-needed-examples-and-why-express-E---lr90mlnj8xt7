@@ -31,9 +31,9 @@ const express = require('express');
 const app = express();
 
 app.get('/welcome', (req, res) => {
-  res.status(200).send("Welcome to Dominos!")
+  res.status(200).json("Welcome to Dominos!")
 })
-
+///
 app.get('/contact', (req, res) => {
   res.status(200).json({
     "phone": '18602100000',
